@@ -1,0 +1,439 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+  body {
+      width: 100%;
+      background: black;
+    }
+      .navbar {
+         width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background: white;
+        padding: 20px;
+      }
+         .nav-left {
+          display: flex;
+          flex-wrap: wrap;
+          align-items: center;
+          gap: 18px;
+         }
+           .nav-left a {
+            color: black;
+            text-decoration: none;
+            font-size: 16px;
+            cursor: pointer;
+           }
+            .nav-left a:hover{
+              color: blue;
+            }
+            .nav-left img {
+              width: 50px;
+            }
+           .nav-right {
+            display: flex;
+            flex-wrap: wrap;
+            text-align: center;
+            gap: 20px;
+           }
+              .nav-right img {
+              width: 16px;
+              height: auto;
+              }
+             .hero {
+            position: relative; 
+           }
+            .hero-img {
+           width: 100%;
+           max-height: 90vh;
+           height: auto;
+           object-fit: cover;
+            }
+            .hero-text {
+              position: absolute;
+              bottom: 16px;
+              left: 20px;
+              color: rgb(236, 20, 20);
+            }
+            .hero-text h1 {
+           font-size: 20px;
+            }
+            .hero-text p {
+              font-size: 14px;
+              max-width: 540px;
+              line-height: 1;
+              margin-top: 5px;
+            }
+            .hero-text button {
+              padding: 16px;
+              background-color: #153488;
+              color: black;
+              font-size: clamp(10px, 3vw, 14px);
+              border-radius: 40px;
+              margin-top: 8px;
+              cursor: pointer;
+            }
+             .hero-text button:hover {
+              background-color: white;
+             }
+               .trends-images {
+                display: flex;
+                flex-wrap: wrap;
+                 gap: 8px;
+                 padding: 10px 0;
+               } 
+                 .image-wrapper {
+                  position: relative;
+                 }
+                  .plus {
+                    position: absolute;
+                    top: -5px;
+                    left: 3px;
+                    color: white;
+                    padding: 2px 0;
+                    font-size: 24px;
+                  }
+                     .see-more {
+                      position: absolute;
+                      top: -35px;
+                      right: 10px;
+                      color: white;
+                      padding: 10px 0;
+                      font-size: 14px;
+                      display: flex;
+                      align-items: center;
+                      gap: 5px;
+                     }
+                       .trends-arrow {
+                        font-size: 14px;
+                       }
+                  .trends-images img {
+                   width: 100%;
+                   height: 45vh;
+                   object-fit: cover;
+                }
+                  .trends {
+                    font-size: 14px;
+                    text-align: left;
+                    color: white;
+                    margin-top: 40px;
+                    }
+                .movies-images {
+                    display: flex;
+                    flex-wrap: wrap;
+                    gap: 6px;
+                  }
+                     .genres {
+                      display: flex;
+                      flex-wrap: wrap;
+                      gap: 30px;
+                      font-size: 24px;
+                      margin: 0 45px;
+                     }
+                      .genres span {
+                        background: rgb(53, 160, 187);
+                      color: black;
+                      font-weight: bold;
+                      border-radius: 10px;
+                      }
+                      .start, .end {
+                        font-size: 24px;
+                      }
+                      .movies-see-more {
+                          position: absolute;
+                          top: -20px;
+                           right: 10px;
+                          color: white;
+                          font-weight: bold;
+                          padding: 5x 0;
+                           font-size: 14px;
+                           display: flex;
+                          text-align:center;
+                          gap: 5px;
+                        }
+                         .movies-arrow {
+                           font-size: 12px;
+                         }
+                           .movies-item {
+                            position: relative;
+                           }
+                            .movies-item .plus {
+                              position: absolute;
+                              top: -5px;
+                              left: 2px;
+                              color: white;
+                              padding: 2x 0;
+                              font-size: 24px;
+                            }
+                            .movies-images img {
+                            width: 100%;
+                            height: 45vh;
+                            object-fit: cover;
+                       }
+                      .movies {
+                      font-size: 16px;
+                      text-align: left;
+                      color: white;
+                      margin-top: 40px;
+                      background: gray;
+                    }
+                    .award {
+                      width: 100%;
+                      background: rgb(213, 228, 12);
+                      padding: 24px;
+                      margin-top: 40px;
+                    }
+                       .award-box {
+                        display: flex;
+                        justify-content: space-between;
+                        align-items: center;
+                        gap: 25px;
+                       }
+                        .award-left {
+                          display: flex;
+                          align-items: center;
+                          gap: 20px;
+                        }
+                         .award-left h2 {
+                          font-size: 80px;
+                         }
+                            .ribbon {
+                              display: flex;
+                              flex-direction: column;
+                              align-items: center;
+                              justify-content: center;
+                            }
+                              .ribbon-circle {
+                                width: 70px;
+                                height: 70px;
+                                border-radius: 40px;
+                                border: 5px solid black;
+                              }
+                                .ribbon-tail {
+                                  width: 40px;
+                                  height: 30vh;
+                                  border-left: 5px solid black;
+                                  border-right: 5px solid black;
+                                  border-bottom: 5px solid black;
+                                }
+                                   .award-right {
+                                    width: 100%;
+                                    max-width: 1024px;
+                                    height: 40vh;
+                                     display: flex;
+                                     align-items: center;
+                                     gap: 15px;
+                                   }
+                        .series-images {
+                          display: flex;
+                          flex-wrap: wrap;
+                          gap: 6px;
+                          margin-top: -5px;
+                        }
+                         .series-images img {
+                             width: 100%;
+                             height: 45vh;
+                            object-fit: cover;
+                             }
+                             .series-items {
+                              position: relative;
+                             }
+                              .header {
+                                display: flex;
+                                flex-wrap: wrap;
+                                gap: 30px;
+                                font-size: 24px;
+                                margin: 0 45px;
+                                margin-bottom: 5px;
+                                }
+                                .header span {
+                              background: darkorange;
+                              color: black;
+                              font-weight: bold;
+                              border-radius: 20px;
+                              }
+                              .start, .end {
+                                  font-size: 24px;
+                                }
+                                 .series-items .plus {
+                                        position: absolute;
+                                        top: -5px;
+                                        left: 2px;
+                                        color: black;
+                                        padding: 2px 0;
+                                        font-size: 24px;
+                                        font-weight: bold;
+                                       }
+                                 .series-see-more {
+                                    position: absolute;
+                                    top: -35px;
+                                    right: 10px;
+                                    color: white;
+                                    font-weight: bold;
+                                    padding: 5px 0;
+                                    font-size: 14px;
+                                    display: flex;
+                                    text-align: center;
+                                    gap: 5px;
+                                  }
+                                    .series-arrow {
+                                      font-size: 12px;
+                                    }
+                                       .series {
+                                        font-size: 16px;
+                                        text-align: left;
+                                        color: white;
+                                        margin-top: 40px;
+                                        background: gray;
+                                        width: 100%;
+                                       }
+                              .pricing {
+                                width: 100%;
+                                text-align: center;
+                                padding: 10px;
+                                background: rgb(107, 74, 74);
+                                margin-top: 40px;
+                              }                        
+                                 .pricing-box {
+                                 display: flex;
+                                 justify-content: center;
+                                 gap: 40px; 
+                                 flex-wrap: wrap;
+                                 }
+                                 .box {
+                                  width: 100%;
+                                  padding: 30px;
+                                  background: white;
+                                  text-align: center;
+                                 }
+                                  .box h3 {
+                                    font-size: 24px;
+                                  }
+                                   .duration {
+                                    font-size: 16px;
+                                    color: black;
+                                   } 
+                                   .price {
+                                   margin-top: 20px;
+                                   font-size: 24px;
+                                   font-weight: bold;
+                                   }
+                                      .cancel {
+                                        font-size: 14px;
+                                        color: rgb(128, 0, 75);
+                                        margin: 10px;
+                                      }
+                                       .btn {
+                                        padding: 10px;
+                                        border-radius: 8px;
+                                        background: blue;
+                                        color: white;
+                                        font-size: 16px;
+                                        cursor: pointer;
+                                       }
+                                        .box-suggested {
+                                          background: #7b72c9;
+                                          width: 100%;
+                                          padding: 30px;
+                                        }
+                                         .box-suggested h3 {
+                                          font-size: 24px;
+                                          margin-top: -4px;
+                                         } 
+                                        .price-head {
+                                          color: white;
+                                          font-size: 24px;
+                                          text-align: left;
+                                          padding: 8px 0;
+                                        }
+                                  .continues-images {
+                                    display: flex;
+                                    justify-content: center;
+                                    gap: 20px;
+                                    flex-wrap: wrap;
+                                    padding: 10px;
+                                  } 
+                                   .images-wrapper {
+                                    position: relative;
+                                   }
+                                    .continues-images img {
+                                      width: 100%;
+                                      height: 70vh;
+                                    }   
+                                    .play-icon {
+                                      position: absolute;
+                                      top: 50%;
+                                      left: 50%;
+                                      border-left: 30px solid white;
+                                      border-top: 20px solid transparent;
+                                      border-bottom: 20px solid transparent;
+                                    }    
+                                    .continues {
+                                      width: 100%;
+                                      background-color: gray;
+                                      margin-top: 40px;
+                                    }       
+                                    .continue-head {
+                                      color: white;
+                                      font-size: 24px;
+                                      text-align: left;
+                                      padding: 10px;
+                                    }   
+                               footer {
+                                      width: 100%;
+                                      background: rgb(51, 26, 26);
+                                      color: white;
+                                      margin-top: 40px;
+                               }
+                                 footer h2 {
+                                  font-size: 24px;
+                                  color: white;
+                                  text-align: left;
+                                 }
+                                  .footer-links {
+                                    text-align: center;
+                                    margin-top: 10px
+                                  }
+                                   .footer-links a {
+                                    color: white;
+                                    text-decoration: none;
+                                    margin: 8px;
+                                   }
+                                @media (max-width: 768px) {  
+                                  .navbar {
+                                    padding: 12px;
+                                  }              
+                                  .nav-left {
+                                    gap: 8px;
+                                  }
+                                  .nav-left a {
+                                    font-size: 12px;
+                                  }
+                                   .nav-left img {
+                                    width: 50px;
+                                   }
+                                    .nav-right {
+                                      gap: 10px;
+                                    }
+                                    .nav-right img {
+                                      width: 20px;
+                                      height: 20px;
+                                    }
+                                    .hero {
+                                      width: 100%;
+                                      height: auto;
+                                    }
+                                    .hero-text h1 {
+                                      font-size: 20px;
+                                    }
+                                     .hero-text p {
+                                      font-size: 10px;
+                                     }
+                                       .hero-text button {
+                                        padding: 0 8px;
+                                        font-size: 12px;
+                                       }
+                                    }
